@@ -21,24 +21,24 @@ spark = SparkSession.builder \
 
 
 # Google Cloud Storage (GCS) Configuration
-GCS_BUCKET = "healthcare-bucket-28-07-2025"
+GCS_BUCKET = "healthcare-bucket-29072025"
 HOSPITAL_NAME = "hospital-b"
 LANDING_PATH = f"gs://{GCS_BUCKET}/landing/{HOSPITAL_NAME}/"
 ARCHIVE_PATH = f"gs://{GCS_BUCKET}/landing/{HOSPITAL_NAME}/archive/"
 CONFIG_FILE_PATH = f"gs://{GCS_BUCKET}/configs/load_config.csv"
 
 # BigQuery Configuration
-BQ_PROJECT = "active-district-466711-i0"
+BQ_PROJECT = "mystic-advice-466120-f1"
 BQ_AUDIT_TABLE = f"{BQ_PROJECT}.temp_dataset.audit_log"
 BQ_LOG_TABLE = f"{BQ_PROJECT}.temp_dataset.pipeline_logs"
-BQ_TEMP_PATH = f"{GCS_BUCKET}/temp/"  
+BQ_TEMP_PATH = f"gs://{GCS_BUCKET}/temp/"  
 
 # MySQL Configuration
 MYSQL_CONFIG = {
-    "url": "jdbc:mysql://34.10.170.134:3306/hospital-b-db?useSSL=false&allowPublicKeyRetrieval=true",
+    "url": "jdbc:mysql://34.174.108.148:3306/hospital-b-db?useSSL=false&allowPublicKeyRetrieval=true",
     "driver": "com.mysql.cj.jdbc.Driver",
-    "user": "nikhil_b",
-    "password": "123456"
+    "user": "nancy_b",
+    "password": "131s959%=Eu5C&*V"
 }
 
 

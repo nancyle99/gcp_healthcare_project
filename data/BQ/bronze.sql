@@ -2,66 +2,66 @@
 -- please do not forget to replace the bucket path
 
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.departments_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.departments_ha` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-a/departments/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-a/departments/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.encounters_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.encounters_ha` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-a/encounters/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-a/encounters/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.patients_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.patients_ha` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-a/patients/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-a/patients/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.providers_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.providers_ha` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-a/providers/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-a/providers/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.transactions_ha` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.transactions_ha` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-a/transactions/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-a/transactions/*.json']
 );
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.departments_hb` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.departments_hb` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-b/departments/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-b/departments/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.encounters_hb` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.encounters_hb` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-b/encounters/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-b/encounters/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.patients_hb` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.patients_hb` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-b/patients/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-b/patients/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.providers_hb` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.providers_hb` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-b/providers/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-b/providers/*.json']
 );
 
-CREATE EXTERNAL TABLE IF NOT EXISTS `active-district-466711-i0.bronze_dataset.transactions_hb` 
+CREATE EXTERNAL TABLE IF NOT EXISTS `mystic-advice-466120-f1.bronze_dataset.transactions_hb` 
 OPTIONS (
   format = 'JSON',
-  uris = ['gs://healthcare-bucket-28-07-2025/landing/hospital-b/transactions/*.json']
+  uris = ['gs://healthcare-bucket-29072025/landing/hospital-b/transactions/*.json']
 );
 
 ---------------------------------------------------------------------------------------------------------------------------

@@ -6,10 +6,10 @@ spark = SparkSession.builder \
                     .getOrCreate()
 
 # configure variables
-BUCKET_NAME = "healthcare-bucket-28-07-2025"
+BUCKET_NAME = "healthcare-bucket-29072025"
 CPT_BUCKET_PATH = f"gs://{BUCKET_NAME}/landing/cptcodes/*.csv"
-BQ_TABLE = "active-district-466711-i0.bronze_dataset.cpt_codes"
-TEMP_GCS_BUCKET = f"{BUCKET_NAME}/temp/"
+BQ_TABLE = "mystic-advice-466120-f1.bronze_dataset.cpt_codes"
+TEMP_GCS_BUCKET = f"gs://{BUCKET_NAME}/temp/"
 
 # read from cpt
 cptcodes_df = spark.read.csv(CPT_BUCKET_PATH, header=True)

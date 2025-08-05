@@ -9,10 +9,10 @@ spark = SparkSession.builder \
                     .getOrCreate()
                     
                     
-BUCKET_NAME = "healthcare-bucket-28-07-2025"       
+BUCKET_NAME = "healthcare-bucket-29072025"       
 CLAIMS_BUCKET_PATH = f"gs://{BUCKET_NAME}/landing/claims/*.csv"
-BQ_TABLE = "active-district-466711-i0.bronze_dataset.claims"
-TEMP_GCS_BUCKET = f"{BUCKET_NAME}/temp/"
+BQ_TABLE = "mystic-advice-466120-f1.bronze_dataset.claims"
+TEMP_GCS_BUCKET = f"gs://{BUCKET_NAME}/temp/"
                     
                     
 claims_df = spark.read.csv(CLAIMS_BUCKET_PATH, header=True)

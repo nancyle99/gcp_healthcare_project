@@ -5,7 +5,7 @@ from airflow.utils.dates import days_ago
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 
 
-PROJECT_ID = "active-district-466711-i0"
+PROJECT_ID = "mystic-advice-466120-f1"
 LOCATION = "US"
 
 SQL_FILE_PATH_1 = 'data/BQ/bronze.sql'
@@ -23,7 +23,7 @@ GOLD_QUERY = read_sql_file(SQL_FILE_PATH_3)
 
 # Define default arguments
 ARGS = {
-    "owner": "Nikhil Sharma",
+    "owner": "Nancy Le",
     "start_date": None,
     "depends_on_past": False,
     "email_on_failure": False,
@@ -39,7 +39,7 @@ with DAG(
     schedule_interval=None,
     description="DAG to run the bigquery jobs",
     default_args=ARGS,
-    tags=["gcs", "bq", "etl", "marvel"]
+    tags=["gcs", "bq", "etl", "healthcare"]
 ) as dag:
 
     # Task to create bronze table
