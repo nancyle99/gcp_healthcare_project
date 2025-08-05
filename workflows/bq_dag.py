@@ -9,7 +9,7 @@ PROJECT_ID = "mystic-advice-466120-f1"
 LOCATION = "US"
 
 # In Composer, this environment variable points to /home/airflow/gcs/
-GCS_HOME = os.environ.get("AIRFLOW_HOME")
+GCS_HOME = "/home/airflow/gcs/"
 
 SQL_FILE_PATH_1 = os.path.join(GCS_HOME, 'data/BQ/bronze.sql')
 SQL_FILE_PATH_2 = os.path.join(GCS_HOME, 'data/BQ/silver.sql')
