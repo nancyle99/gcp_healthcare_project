@@ -3,14 +3,17 @@ from airflow import DAG
 from datetime import timedelta
 from airflow.utils.dates import days_ago
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
+import os
 
 
 PROJECT_ID = "mystic-advice-466120-f1"
 LOCATION = "US"
 
-SQL_FILE_PATH_1 = 'data/BQ/bronze.sql'
-SQL_FILE_PATH_2 = 'data/BQ/silver.sql'
-SQL_FILE_PATH_3 = 'data/BQ/gold.sql'
+GCS_HOME = os.environ.get("AIRFLOW_HOME")
+
+SQL_FILE_PATH_1 = os.path.join(GCS_HOME, 'data/BQ/bronze.sql')
+SQL_FILE_PATH_2 = os.path.join(GCS_HOME, 'data/BQ/silver.sql')
+SQL_FILE_PATH_3 = os.path.join(GCS_HOME, 'data/BQ/gold.sql')
 
 def read_sql_file(file_path):
     with open(file_path, "r") as file:
@@ -28,7 +31,7 @@ ARGS = {
     "depends_on_past": False,
     "email_on_failure": False,
     "email_on_retry": False,
-    "email": ["nancy.nhanle99@gmail.com"],
+    "email": ["***@gmail.com"],
     "email_on_success": False,
     "retries": 1,
     "retry_delay": timedelta(minutes=5)
